@@ -11,6 +11,7 @@ int main()
     printf("signed long max = %ld\n", LONG_MAX);
     printf("signed char min = %d\n", CHAR_MIN);
     printf("signed char max = %d\n", CHAR_MAX);
+    printf("unsigned char max = %u\n", UCHAR_MAX);
     printf("unsigned short max = %u\n", USHRT_MAX);
     printf("unsigned integer max = %u\n", UINT_MAX);
     printf("unsigned long max = %lu\n", ULONG_MAX);
