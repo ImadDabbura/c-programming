@@ -11,4 +11,5 @@ struct key {
 int main()
 {
     printf("first word of keywords %s\n", keywords[0].word);
+    printf("second count is %d\n", keywords[1].count);
 }

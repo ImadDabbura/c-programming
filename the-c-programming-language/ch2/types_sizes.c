@@ -15,5 +15,4 @@ int main()
     printf("unsigned short max = %u\n", USHRT_MAX);
     printf("unsigned integer max = %u\n", UINT_MAX);
     printf("unsigned long max = %lu\n", ULONG_MAX);
-    printf("unsigned char max = %u\n", UCHAR_MAX);
 }
