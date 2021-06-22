@@ -16,9 +16,10 @@ int main()
             ++nl;       /* increment number of newlines */
         if (c == '\n' || c == '\t' || c == ' ')
             state = OUT;
-        else if (state == OUT)
+        else if (state == OUT) {
             state = IN;
             ++nw;
+        }
     }
     printf("%d %d %d\n", nl, nw, nc);
 }

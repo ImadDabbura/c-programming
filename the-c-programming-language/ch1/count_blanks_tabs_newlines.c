@@ -15,8 +15,8 @@ int main()
             ++nl;
         else if (c == ' ')
             ++nb;    
+    }
     printf("Number of blanks : %d\n", nb);
     printf("Number of tabs : %d\n", nt);
     printf("Number of newlines : %d\n", nl);
-    }
 }
