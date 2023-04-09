@@ -6,13 +6,20 @@ int main()
     int *ip;
     int i;
 
-    for (i = 0; i < 10; i++)
-        if (i == 1)
-            arr[i] = 100;
-        arr[i] = i;
-    
+    for (i = 0; i < 10; i++) {
+        arr[i] = i * 10;
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
     ip = arr;
-    printf("ip = %d, *++p = %d\n", *ip, *++ip);
-    ip -= 1;
-    printf("++(*p) = %d\n", ++(*ip));
+    /* ++ is unary operator so the expression gets executed right to left */
+    printf("*++ip = %d\n", *++ip);          /* Increment the pointer then fetch the element */
+    printf("++*ip = %d\n", ++*ip);          /* Increment the element that the pointer is pointing at */
+    printf("*ip++ = %d\n", *ip++);          /* Fetch the element then increment the pointer */
+    printf("(*ip)++ = %d\n", (*ip)++);      /* Increment the element that the pointer is pointing at */
+    for (i = 0; i < 10; i++) {
+        arr[i] = i * 10;
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
 }
