@@ -6,7 +6,7 @@ static char allocbuffer[ALLOCSIZE];
 static char *allocp = allocbuffer;
 
 char *alloc(int n){
-    /* Allocation n contiguous memory from available space */
+    /* Allocating n contiguous memory from available space */
     if (allocp + n <= allocbuffer + ALLOCSIZE){
         allocp += n;
         return allocp - n;

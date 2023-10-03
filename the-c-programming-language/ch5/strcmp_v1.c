@@ -6,5 +6,10 @@ int strcmp(char *s, char *t){
         if (s[i] == '\0')
             return 0;
     }
+    /* while (*s++ == *t++){ */
+    /*     if (*(s - 1) == '\0') */
+    /*         return 0; */
+    /* } */
+    /* return *(s - 1) - *(t - 1); */
     return s[i] - t[i];
 }

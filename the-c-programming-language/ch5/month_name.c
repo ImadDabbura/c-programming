@@ -3,6 +3,10 @@
 /* name of month */
 char *month_name(int n)     /* return a pointer for corresponding characters of month name */
 {
+    /* We need month to be static to be able to use pointer to month name
+     * Otherwise, month will be on the stack and destroyed upon return from
+     * the function
+     */
     static char *month[] = {        /* array of character pointers */
         "Illegal month", "January", "February", "March", "April", "June",
         "July", "August", "September", "October", "November", "December"

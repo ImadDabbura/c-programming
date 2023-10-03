@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main(){
+int main(void)
+{
     int i = 100;
     printf("First i = %d\n", i);
 
@@ -13,4 +14,5 @@ int main(){
     }
     printf("After if block i = %d\n", i);
 
+    return 0;
 }
