@@ -10,10 +10,13 @@ int lower(int c)
         return c;
 }
 
-int main(int argc, char *argv[], char *envp[]){
-    char s[strlen(argv[1])];
-    strcpy(s, argv[1]);
+int main(int argc, char *argv[])
+{
+    char s[strlen(argv[1]) + 1];
     int i = 0;
+
+    strcpy(s, argv[1]);
+
     while (s[i] != '\0') {
         s[i] = lower(s[i]);
         i++;
