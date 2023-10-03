@@ -21,6 +21,7 @@ int main()
     printf("digits = ");
     for (i = 0; i <= 9; ++i)
         printf(" %d", ndigit[i]);
-    printf("\nnumber of white spaces = %d", nwhite);
-    printf("\nnumber of other = %d", nother);
+    printf("\n");
+    printf("number of white spaces = %d\n", nwhite);
+    printf("number of other = %d\n", nother);
 }
