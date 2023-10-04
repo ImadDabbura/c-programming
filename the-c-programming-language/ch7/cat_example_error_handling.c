@@ -22,8 +22,8 @@ int main(int argc, char const *argv[])
     else {
         while (argc-- > 1){
             if ((fp = fopen(*++argv, "r")) == NULL){
-                fprintf(stderr, "%c: can't open %s\n", *prog, *argv);
-                exit(1);
+                fprintf(stderr, "%s: can't open %s\n", prog, *argv);
+                exit(EXIT_FAILURE);
             }
             else {
                 filecopy(fp, stdout);
@@ -32,8 +32,8 @@ int main(int argc, char const *argv[])
         }
     }
     if (ferror(stdout)) {           // captures error in stdout
-        fprintf(stderr, "%c: error writing output\n", *prog);
+        fprintf(stderr, "%s: error writing output\n", prog);
         exit(2);
         }
-    exit(0);            // equivalent to return 0
+    exit(EXIT_SUCCESS);            // equivalent to return 0
 }

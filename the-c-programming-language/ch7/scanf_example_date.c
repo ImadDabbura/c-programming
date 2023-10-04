@@ -6,9 +6,7 @@ int main()
     int day, month, year;
 
     // Adding numbers from stdin
-    while (scanf("%d %d %d", &day, &month, &year)){
-        printf("%d/%d/%d\n", month, day, year);
-        break;
-    }
+    scanf("%d %d %d", &day, &month, &year);
+    printf("%d/%d/%d\n", month, day, year);
     return 0;
 }

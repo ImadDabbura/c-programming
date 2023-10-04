@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /* copy input file to output file */
 void filecopy(FILE *ifp, FILE *ofp)
@@ -19,8 +20,8 @@ int main(int argc, char const *argv[])
     else               // read from files
         while (argc-- > 1){
             if ((fp = fopen(*++argv, "r")) == NULL){
-                printf("can't open %s\n", *argv);
-                break;
+                fprintf(stderr, "can't open %s\n", *argv);
+                exit(EXIT_FAILURE);
             }
             else {
                 filecopy(fp, stdout);
