@@ -1,6 +1,6 @@
 # Simple makefile to illustrate how to use it in building programs in C
 CC = gcc
-CFLAGS = -g -I/Users/imad/Documents/c_programming/simple_project
+CFLAGS = -g -Wall -Werror -Wextra -I/Users/imad/Documents/c_programming/simple_project
 
 PROG = program
 HDRS = headers.h
@@ -15,7 +15,7 @@ min.o : min.c
 max.o : max.c
 
 TAGS : $(SRCS) $(HDRS)
-	etags $(SRCS) $(HDRS)
+	ctags $(SRCS) $(HDRS)
 
 .PHONY : variables
 variables : 
