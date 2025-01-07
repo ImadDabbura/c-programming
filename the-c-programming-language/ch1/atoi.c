@@ -3,12 +3,10 @@
 
 int main(int argc, char *argv[])
 {
-
     if (argc < 2) {
         fprintf(stderr, "Please provide a number to convert from string to int\n");
         exit(EXIT_FAILURE);
     }
-    int i = 0;
     int n = 0;
     char *s = argv[1];
 
