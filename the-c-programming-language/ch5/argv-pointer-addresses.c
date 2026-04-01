@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(int argc, char *argv[], char *envp[]){
+int main(int argc, char **argv, char **envp){
     while (argc--){
         printf("Argument pointer address = %p\n", argv);
         printf("Argument string address = %p\n", *argv);

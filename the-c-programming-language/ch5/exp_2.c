@@ -8,10 +8,10 @@ int main()
     printf("x = %d, y = %d\n", x, y);
     ip = &x;                            /* ip is a pointer to x */
     *ip = *ip + 10;
-    printf("x = %d, y = %d\n", x, y);   
-    *ip += 1;                            
     printf("x = %d, y = %d\n", x, y);
-    y = *ip + 1;                            
+    *ip += 1;
+    printf("x = %d, y = %d\n", x, y);
+    y = *ip + 1;
     printf("x = %d, y = %d\n", x, y);
     return 0;
 }

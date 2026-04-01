@@ -23,6 +23,5 @@ int main(){
     printf("\nAccessing all members at the same time:\n");
     printf("union data:\ninteger = %d\ndecimal = %f\nname = %s\n",
             u.integer, u.decimal, u.name);
-    
     // changing one element affects the rest
 }

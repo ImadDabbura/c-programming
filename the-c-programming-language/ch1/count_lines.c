@@ -3,10 +3,11 @@
 /* count lines of input */
 int main(int argc, char const *argv[])
 {
-    int c, nl;
+    int c, nl = 0;
 
     while ((c = getchar()) != EOF)
         if (c == '\n')
             ++nl;
     printf("%d\n", nl);
+    return 0;
 }
